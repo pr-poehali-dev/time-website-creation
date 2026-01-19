@@ -6,9 +6,11 @@ import Icon from '@/components/ui/icon';
 import { useNavigate, useParams } from 'react-router-dom';
 
 type ThemeMode = 'light' | 'dark' | 'sepia';
+type ReadingMode = 'normal' | 'focus' | 'comfortable' | 'night';
 
 const Document = () => {
   const [theme, setTheme] = useState<ThemeMode>('light');
+  const [readingMode, setReadingMode] = useState<ReadingMode>('normal');
   const [language, setLanguage] = useState<'ru' | 'en'>('ru');
   const [revealedParagraphs, setRevealedParagraphs] = useState<number>(0);
   const navigate = useNavigate();
@@ -22,6 +24,18 @@ const Document = () => {
     setTheme(nextTheme);
     document.documentElement.classList.remove('light', 'dark', 'sepia');
     document.documentElement.classList.add(nextTheme);
+  };
+
+  const toggleReadingMode = () => {
+    const modes: ReadingMode[] = ['normal', 'focus', 'comfortable', 'night'];
+    const currentIndex = modes.indexOf(readingMode);
+    const nextMode = modes[(currentIndex + 1) % modes.length];
+    setReadingMode(nextMode);
+    if (nextMode === 'night') {
+      setTheme('dark');
+      document.documentElement.classList.remove('light', 'sepia');
+      document.documentElement.classList.add('dark');
+    }
   };
 
   const documentContent = {
@@ -71,10 +85,23 @@ const Document = () => {
     return () => clearInterval(timer);
   }, [doc.paragraphs.length]);
 
+  const getReadingModeClasses = () => {
+    switch (readingMode) {
+      case 'focus':
+        return 'focus-mode';
+      case 'comfortable':
+        return 'text-lg leading-loose';
+      case 'night':
+        return 'dark';
+      default:
+        return '';
+    }
+  };
+
   return (
-    <div className={`min-h-screen paper-texture ${theme}`}>
+    <div className={`min-h-screen paper-texture ${theme} ${getReadingModeClasses()}`}>
       <div className="flex h-screen">
-        <aside className="w-80 border-r border-border bg-sidebar">
+        <aside className={`w-80 border-r border-border bg-sidebar ${readingMode === 'focus' ? 'hidden' : ''}`}>
           <ScrollArea className="h-full">
             <div className="p-6">
               <button
@@ -146,7 +173,7 @@ const Document = () => {
         </aside>
 
         <main className="flex-1 flex flex-col">
-          <header className="border-b border-border bg-card">
+          <header className={`border-b border-border bg-card ${readingMode === 'focus' ? 'hidden' : ''}`}>
             <div className="flex items-center justify-between p-4">
               <div className="flex items-center gap-4">
                 <div className="font-mono text-xs text-muted-foreground">
@@ -159,14 +186,28 @@ const Document = () => {
                   size="sm"
                   onClick={() => setLanguage(language === 'ru' ? 'en' : 'ru')}
                   className="font-mono text-xs"
+                  title={language === 'ru' ? 'Сменить язык' : 'Change language'}
                 >
                   {language.toUpperCase()}
                 </Button>
                 <Button
                   variant="ghost"
                   size="sm"
+                  onClick={toggleReadingMode}
+                  className="w-9 h-9 p-0"
+                  title={language === 'ru' ? 'Режим чтения' : 'Reading mode'}
+                >
+                  <Icon
+                    name={readingMode === 'focus' ? 'Maximize2' : readingMode === 'comfortable' ? 'Type' : readingMode === 'night' ? 'Moon' : 'Book'}
+                    size={16}
+                  />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="sm"
                   onClick={toggleTheme}
                   className="w-9 h-9 p-0"
+                  title={language === 'ru' ? 'Тема оформления' : 'Theme'}
                 >
                   <Icon
                     name={theme === 'light' ? 'Sun' : theme === 'dark' ? 'Moon' : 'Eye'}
@@ -178,18 +219,18 @@ const Document = () => {
           </header>
 
           <ScrollArea className="flex-1">
-            <div className="max-w-4xl mx-auto p-8 space-y-12">
+            <div className={`mx-auto p-8 space-y-12 vintage-lines ${readingMode === 'focus' ? 'max-w-3xl' : 'max-w-4xl'} ${readingMode === 'comfortable' ? 'text-xl leading-loose' : ''}`}>
               <div className="relative">
-                <div className="absolute top-0 right-0 font-mono text-xs text-accent border border-accent px-3 py-1.5 bg-background/80 backdrop-blur">
-                  {language === 'ru' ? 'ДЕКЛАССИФИЦИРОВАНО' : 'DECLASSIFIED'}
-                  <div className="text-muted-foreground mt-1">{doc.date}</div>
+                <div className="absolute top-0 right-0 stamp text-xs text-accent">
+                  {language === 'ru' ? 'Деклассифицировано' : 'Declassified'}
+                  <div className="text-muted-foreground mt-1 text-center">{doc.date.split('.').reverse().join('.')}</div>
                 </div>
 
                 <div className="pt-16 space-y-4">
-                  <div className="font-mono text-sm text-muted-foreground">
+                  <div className="font-mono text-sm text-muted-foreground tracking-wider">
                     {doc.year}
                   </div>
-                  <h1 className="font-serif text-5xl font-bold text-foreground leading-tight">
+                  <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">
                     {doc.title}
                   </h1>
                 </div>
@@ -201,10 +242,10 @@ const Document = () => {
                 {doc.paragraphs.map((paragraph, idx) => (
                   <p
                     key={idx}
-                    className={`font-serif text-lg leading-relaxed text-foreground/90 transition-opacity duration-600 ${
+                    className={`quote-highlight font-serif leading-relaxed text-foreground/90 transition-opacity duration-600 ${
                       idx < revealedParagraphs ? 'fade-in-up opacity-100' : 'opacity-0'
-                    }`}
-                    style={{ animationDelay: `${idx * 0.1}s` }}
+                    } ${readingMode === 'comfortable' ? 'text-xl' : 'text-lg'}`}
+                    style={{ animationDelay: `${idx * 0.2}s` }}
                   >
                     {paragraph}
                   </p>

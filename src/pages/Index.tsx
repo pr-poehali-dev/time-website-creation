@@ -211,17 +211,17 @@ const Index = () => {
           <ScrollArea className="flex-1">
             <div className="max-w-4xl mx-auto p-8 space-y-12">
               <div className="relative">
-                <div className="absolute top-0 right-0 font-mono text-xs text-accent border border-accent px-3 py-1.5 bg-background/80 backdrop-blur">
+                <div className="absolute top-0 right-0 stamp text-xs text-accent">
                   {t.manifesto.stamp}
-                  <div className="text-muted-foreground mt-1">{t.manifesto.date}</div>
+                  <div className="text-muted-foreground mt-1 text-center">{t.manifesto.date}</div>
                 </div>
 
                 <div className="pt-16 space-y-8 fade-in-up">
-                  <h1 className="font-serif text-5xl font-bold text-foreground leading-tight">
+                  <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight tracking-tight">
                     {t.manifesto.title}
                   </h1>
                   
-                  <p className="font-serif text-xl leading-relaxed text-foreground/90">
+                  <p className="font-serif text-xl md:text-2xl leading-relaxed text-foreground/90 max-w-4xl">
                     {t.manifesto.subtitle}
                   </p>
                 </div>
