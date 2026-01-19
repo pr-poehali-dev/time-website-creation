@@ -50,8 +50,132 @@ const PeopleForgot = () => {
           text: 'Исключительное право, предоставленное одному или нескольким лицам на переработку и продажу любых произведений рук и ума человеческого. Монополии вредны для народного благосостояния, кому бы они не принадлежали: хоть государству, хоть частным лицам; потому что монополист уверен в сбыте и, не имея конкурентов, не заботится об усовершенствовании своей продукции, назначает за нее цену, какую захочет.'
         },
         {
+          term: 'Моногамия',
+          text: 'Единобрачие, соединение в браке одного мужчины с одной женщиной. Это древнейшая и естественнейшая форма брачного союза, единственно соответствующая нравственной природе человека.'
+        },
+        {
+          term: 'Монотеизм',
+          text: 'Вера в единого Бога в противоположность политеизму, или многобожию. Монотеизм составляет существенное основание трех великих религий: иудейской, христианской и магометанской.'
+        },
+        {
+          term: 'Мораль',
+          text: 'Наука о нравах, о должном поведении человека, о добре и зле в отношениях людей. Мораль определяет правила человеческого общежития на основании высших требований разума и совести.'
+        },
+        {
+          term: 'Натуральный и натуральность',
+          text: 'Естественный, природный, не искусственный. В применении к человеческой деятельности означает такую деятельность, которая вытекает из непосредственных потребностей и влечений природы, без участия высших сил души - разума и свободной воли.'
+        },
+        {
+          term: 'Натуральное право',
+          text: 'Право, вытекающее из самой природы человека, предшествующее всякому положительному законодательству. Натуральное право составляет основу всех гражданских законов и служит критерием их справедливости.'
+        },
+        {
+          term: 'Нация',
+          text: 'Народ, составляющий политическое целое, государство. Нация отличается от простого этнического племени тем, что имеет общее государственное устройство, общие законы, общую культуру и литературу.'
+        },
+        {
+          term: 'Национальное собрание',
+          text: 'Представительное учреждение, составленное из депутатов всех сословий народа для обсуждения и решения государственных дел. Во Франции так называлось собрание сословий, провозгласившее себя в 1789 году представителем всей нации.'
+        },
+        {
+          term: 'Нек плюс ультра',
+          text: 'Латинское изречение, означающее высшую степень совершенства, до которой можно дойти в чем-либо; дальше идти некуда - предел совершенства.'
+        },
+        {
+          term: 'Некрополис',
+          text: 'Город мертвых, кладбище. Так назывались у древних места погребения, особенно когда они составляли обширные подземные здания с множеством гробниц.'
+        },
+        {
+          term: 'Немейские игры',
+          text: 'Одно из четырех великих национальных празднеств древней Греции, учрежденное в память Геркулеса, победившего немейского льва. Происходили каждые два года в Немее, в Арголиде.'
+        },
+        {
+          term: 'Неология',
+          text: 'Введение новых слов или новых значений старых слов в язык. В более узком смысле - склонность к нововведениям в области религии, стремление толковать религиозные догматы согласно требованиям разума.'
+        },
+        {
+          term: 'Неохристианизм',
+          text: 'Попытка примирения христианства с современной философией и наукой путем нового толкования христианских догматов. Стремление обновить христианское учение, приспособив его к потребностям времени.'
+        },
+        {
+          term: 'Непотизм',
+          text: 'Покровительство родственникам. Так называлось особенно злоупотребление пап, которые раздавали высшие церковные должности и богатства своим родственникам, племянникам.'
+        },
+        {
+          term: 'Номенклатура',
+          text: 'Собрание имен, названий предметов какой-либо отрасли науки или искусства. В общественном смысле - совокупность лиц, занимающих определенные должности и образующих привилегированный слой.'
+        },
+        {
+          term: 'Нормальное состояние',
+          text: 'Состояние, согласное с установленной нормой, правилом. В приложении к обществу - состояние, соответствующее его естественному развитию, когда все его части находятся в должном отношении друг к другу.'
+        },
+        {
+          term: 'Нотабене',
+          text: 'Латинское выражение, употребляемое для обозначения того, на что следует обратить особенное внимание. Означает: заметь хорошо, запомни.'
+        },
+        {
+          term: 'Нотаболи',
+          text: 'Знатнейшие, почетнейшие граждане. Так назывались в средние века в некоторых итальянских республиках лица, принадлежавшие к высшему сословию и имевшие право участвовать в управлении государством.'
+        },
+        {
+          term: 'Нотариус',
+          text: 'Должностное лицо, на обязанности которого лежит засвидетельствование различных актов: договоров, духовных завещаний, доверенностей и прочих документов с целью придания им юридической силы.'
+        },
+        {
+          term: 'Новаторство',
+          text: 'Стремление вводить новое, делать нововведения. В хорошем смысле означает полезную деятельность, направленную на усовершенствование существующего; в дурном - страсть к переменам ради самих перемен.'
+        },
+        {
+          term: 'Новатор',
+          text: 'Человек, вводящий что-либо новое в науке, искусстве, общественной жизни. Новатор отличается от простого изобретателя тем, что не только придумывает новое, но и проводит его в жизнь.'
+        },
+        {
+          term: 'Новация',
+          text: 'Обновление, преобразование чего-либо. В юридическом смысле - замена одного обязательства другим, когда прежнее обязательство уничтожается и на его место становится новое.'
+        },
+        {
+          term: 'Обскурант',
+          text: 'Противник просвещения, мракобес. Так называют людей, которые из личных или партийных видов стараются держать народ в невежестве, препятствуют распространению образования и света.'
+        },
+        {
           term: 'Обскурантизм',
           text: 'Полнота и степень совершенства знания и самосознания в человеке или для человека есть основа и залог его действительного могущества. Без всезнания всемогущество немыслимо. Обскурантизм вообще является важной составной частью в любом религиозном властительстве или чьем-либо правлении; стараться использовать сами знания как орудие для унижения и оставления народа в еще больше невежестве, объясняя, что ум человеческий ограничен, истина – недосягаема, божество – непонятно.'
+        },
+        {
+          term: 'Овенизм',
+          text: 'Учение Роберта Овена о преобразовании общества на началах социализма. Овен полагал, что характер человека образуется обстоятельствами, что человек - продукт среды, и потому для исправления человечества нужно изменить общественные условия.'
+        },
+        {
+          term: 'Олигархия',
+          text: 'Форма правления, при которой власть находится в руках немногих. Олигархия может быть аристократической, когда власть принадлежит знатным, или плутократической, когда правят богачи.'
+        },
+        {
+          term: 'Оппозиция',
+          text: 'Противодействие, сопротивление. В политическом смысле - партия или группа лиц, противодействующих правительству, не соглашающихся с его мерами и стремящихся заменить его собой.'
+        },
+        {
+          term: 'Оптиматы',
+          text: 'Лучшие, знатнейшие люди. Так называлась в древнем Риме аристократическая партия, состоявшая из патрициев и богатых плебеев, противополагавшаяся демократической партии популяров.'
+        },
+        {
+          term: 'Оратор',
+          text: 'Человек, обладающий даром красноречия, умеющий говорить убедительно, увлекательно. Ораторство есть искусство словом действовать на ум, чувство и волю других людей.'
+        },
+        {
+          term: 'Органическая эпоха',
+          text: 'Время спокойного, правильного развития общества, когда все его части находятся в гармонии, когда господствует одно цельное миросозерцание. Противополагается критической эпохе - времени разложения старого и борьбы за новое.'
+        },
+        {
+          term: 'Организатор',
+          text: 'Человек, обладающий способностью устроять, приводить в порядок какое-либо дело. Организатор не только придумывает план, но и умеет осуществить его, соединяя и направляя деятельность многих людей к одной цели.'
+        },
+        {
+          term: 'Орда',
+          text: 'Кочующее племя, народ. В истории России ордой называлось татарское государство, покорившее Русь в XIII веке. Переносно означает беспорядочную толпу, шайку.'
+        },
+        {
+          term: 'Ордалии',
+          text: 'Суды Божии, испытания огнем, водой, железом для открытия истины в судебных делах. Основывались на убеждении, что Бог чудесным образом защитит невинного и обличит виновного.'
         },
         {
           term: 'Оракул',
@@ -65,35 +189,159 @@ const PeopleForgot = () => {
       sections: [
         {
           term: 'Sutler',
-          text: 'Sellers of provisions attached to an army during war. The inconveniences associated with transporting and storing goods, the danger of losing all possessions with changes in circumstances at the "fronts" force sutlers to sell their products and goods at extremely high prices. Their presence at the front is a necessary evil: they ruin everyone, encouraging excessive spending, often pushing the entourage to plunder in which they actively participate.'
+          text: 'Sellers of provisions attached to an army during war. The inconveniences associated with transporting and storing goods, the danger of losing all possessions with changes in circumstances at the "fronts" force sutlers to sell their products and goods at extremely high prices.'
         },
         {
           term: 'Materialism',
-          text: 'Materialism is such a view of things according to which everything spiritual, supersensible, is considered fiction. Man is nothing more than a perfected animal, having no other purpose than satisfying bodily needs, but distinguished from other animals by the art of multiplying and refining these needs, anticipating them and satisfying them with calculation and reason.'
+          text: 'Materialism is such a view of things according to which everything spiritual, supersensible, is considered fiction. Man is nothing more than a perfected animal, having no other purpose than satisfying bodily needs.'
         },
         {
           term: 'Mercantile System',
-          text: 'The presence and possession of enormous raw material resources and minerals has a strong influence on people, on their understanding of national wealth. They begin to see it in the abundance and excess of precious metals and money, that is, the more a people acquires them by trading their knowledge, products, works, etc., the more successful and wealthier they are.'
+          text: 'The presence and possession of enormous raw material resources and minerals has a strong influence on people, on their understanding of national wealth.'
         },
         {
           term: 'Misanthropy',
-          text: 'Fear of people, hatred of people. This refers not so much to a disease as to a person\'s tendency to fear or hate people. The cause lies not in a person\'s temperament, but in the deficiency or damage of one of their spiritual faculties, primarily reason.'
+          text: 'Fear of people, hatred of people. This refers not so much to a disease as to a person\'s tendency to fear or hate people.'
         },
         {
           term: 'Coin',
-          text: 'The word "money" generally means any object accepted in society as a measure when determining the relative price of various objects. A coin is metal that has received a certain form by means of minting and serves as a universally recognized sign of value to facilitate exchange transactions in society. Alongside coins, paper money circulates – banknotes without real backing: such a financial system represents a pyramid, easily leading to bankruptcy and inevitable state upheavals.'
+          text: 'The word "money" generally means any object accepted in society as a measure when determining the relative price of various objects.'
         },
         {
           term: 'Monopoly',
-          text: 'An exclusive right granted to one or several persons for the processing and sale of any products of human hands and mind. Monopolies are harmful to public welfare, no matter who they belong to: whether the state or private individuals; because the monopolist is confident in sales and, having no competitors, does not care about improving their products, sets whatever price they want.'
+          text: 'An exclusive right granted to one or several persons for the processing and sale of any products of human hands and mind.'
+        },
+        {
+          term: 'Monogamy',
+          text: 'Marriage of one man with one woman. This is the most ancient and natural form of marriage union, the only one corresponding to the moral nature of man.'
+        },
+        {
+          term: 'Monotheism',
+          text: 'Belief in one God as opposed to polytheism, or worship of many gods. Monotheism constitutes the essential foundation of three great religions: Jewish, Christian and Mohammedan.'
+        },
+        {
+          term: 'Morality',
+          text: 'The science of morals, of proper human behavior, of good and evil in human relations.'
+        },
+        {
+          term: 'Natural',
+          text: 'Natural, not artificial. In application to human activity means such activity that flows from immediate needs and inclinations of nature.'
+        },
+        {
+          term: 'Natural Law',
+          text: 'Law arising from the very nature of man, preceding all positive legislation.'
+        },
+        {
+          term: 'Nation',
+          text: 'A people constituting a political whole, a state. A nation differs from a simple ethnic tribe in having common government, common laws, common culture and literature.'
+        },
+        {
+          term: 'National Assembly',
+          text: 'A representative institution composed of deputies from all classes of the people to discuss and decide state affairs.'
+        },
+        {
+          term: 'Ne Plus Ultra',
+          text: 'Latin expression meaning the highest degree of perfection that can be achieved in something; one cannot go further - the limit of perfection.'
+        },
+        {
+          term: 'Necropolis',
+          text: 'City of the dead, cemetery. Thus the ancients called burial places, especially when they constituted extensive underground buildings with many tombs.'
+        },
+        {
+          term: 'Nemean Games',
+          text: 'One of the four great national festivals of ancient Greece, established in memory of Hercules defeating the Nemean lion.'
+        },
+        {
+          term: 'Neology',
+          text: 'Introduction of new words or new meanings of old words into a language. In a narrower sense - inclination to innovations in religion.'
+        },
+        {
+          term: 'Neo-Christianity',
+          text: 'Attempt to reconcile Christianity with modern philosophy and science through new interpretation of Christian dogmas.'
+        },
+        {
+          term: 'Nepotism',
+          text: 'Patronage of relatives. This was especially the abuse of popes who distributed highest church positions and wealth to their relatives.'
+        },
+        {
+          term: 'Nomenclature',
+          text: 'Collection of names, designations of objects in some branch of science or art. In social sense - totality of persons occupying certain positions.'
+        },
+        {
+          term: 'Normal State',
+          text: 'State conforming to an established norm, rule. In application to society - state corresponding to its natural development.'
+        },
+        {
+          term: 'Nota Bene',
+          text: 'Latin expression used to indicate what should receive special attention. Means: note well, remember.'
+        },
+        {
+          term: 'Notaboli',
+          text: 'Most notable, most honorable citizens. In the Middle Ages in some Italian republics, persons belonging to the highest class.'
+        },
+        {
+          term: 'Notary',
+          text: 'Official whose duty is to certify various acts: contracts, wills, powers of attorney and other documents to give them legal force.'
+        },
+        {
+          term: 'Innovation',
+          text: 'Striving to introduce new things, make innovations. In good sense means useful activity aimed at improving the existing.'
+        },
+        {
+          term: 'Innovator',
+          text: 'Person introducing something new in science, art, social life. An innovator differs from a simple inventor.'
+        },
+        {
+          term: 'Novation',
+          text: 'Renewal, transformation of something. In legal sense - replacement of one obligation by another.'
+        },
+        {
+          term: 'Obscurant',
+          text: 'Opponent of enlightenment, obscurantist. People who from personal or party motives try to keep people in ignorance.'
         },
         {
           term: 'Obscurantism',
-          text: 'The fullness and degree of perfection of knowledge and self-consciousness in a person or for a person is the foundation and guarantee of their actual power. Without omniscience, omnipotence is unthinkable. Obscurantism is generally an important component of any religious rule or someone\'s governance; trying to use knowledge itself as a tool for humiliation and keeping the people in even greater ignorance, explaining that the human mind is limited, truth is unattainable, deity is incomprehensible.'
+          text: 'The fullness and degree of perfection of knowledge and self-consciousness in a person is the foundation of their actual power.'
+        },
+        {
+          term: 'Owenism',
+          text: 'Teaching of Robert Owen about transforming society on the principles of socialism.'
+        },
+        {
+          term: 'Oligarchy',
+          text: 'Form of government where power is in the hands of the few.'
+        },
+        {
+          term: 'Opposition',
+          text: 'Counteraction, resistance. In political sense - party or group opposing the government.'
+        },
+        {
+          term: 'Optimates',
+          text: 'The best, most noble people. In ancient Rome the aristocratic party.'
+        },
+        {
+          term: 'Orator',
+          text: 'Person possessing the gift of eloquence, able to speak convincingly, captivatingly.'
+        },
+        {
+          term: 'Organic Era',
+          text: 'Time of calm, regular development of society, when all its parts are in harmony.'
+        },
+        {
+          term: 'Organizer',
+          text: 'Person possessing the ability to arrange, put in order some matter.'
+        },
+        {
+          term: 'Horde',
+          text: 'Nomadic tribe, people. In Russian history the Tatar state that conquered Rus in the 13th century.'
+        },
+        {
+          term: 'Ordeals',
+          text: 'Judgments of God, trials by fire, water, iron to discover truth in judicial matters.'
         },
         {
           term: 'Oracle',
-          text: 'Thus the ancients called either a deity that predicted the future, or a place where divination was located. At their first glance at the world, man sees the supernatural in everything: nature appears as deity, almost any object seems to be the dwelling of deity, every phenomenon of nature – a direct action of deity.'
+          text: 'Thus the ancients called either a deity that predicted the future, or a place where divination was located.'
         }
       ],
       footer: 'The text is published in its original edition.'
@@ -120,28 +368,26 @@ const PeopleForgot = () => {
 
               <div className="mb-6">
                 <h2 className="font-serif text-xl font-bold text-sidebar-foreground mb-2">
-                  {language === 'ru' ? 'Люди просто забыли' : 'People Forgot'}
+                  {language === 'ru' ? 'Словарь' : 'Dictionary'}
                 </h2>
                 <div className="font-mono text-xs text-muted-foreground">
-                  {language === 'ru' ? 'Словарь терминов' : 'Dictionary of Terms'}
+                  {t.sections.length} {language === 'ru' ? 'терминов' : 'terms'}
                 </div>
               </div>
 
               <Separator className="my-4" />
 
-              <div className="space-y-2">
-                <div className="text-xs font-mono uppercase text-muted-foreground mb-2">
-                  {language === 'ru' ? 'Термины' : 'Terms'}
-                </div>
+              <nav className="space-y-1">
                 {t.sections.map((section, idx) => (
-                  <div
+                  <a
                     key={idx}
-                    className="font-serif text-sm py-2 px-3 rounded-sm bg-sidebar-accent/30 text-sidebar-foreground"
+                    href={`#term-${idx}`}
+                    className="block px-3 py-1.5 text-xs font-mono text-sidebar-foreground hover:text-accent hover:bg-sidebar-accent/50 rounded-sm transition-colors"
                   >
                     {section.term}
-                  </div>
+                  </a>
                 ))}
-              </div>
+              </nav>
             </div>
           </ScrollArea>
         </aside>
@@ -151,7 +397,7 @@ const PeopleForgot = () => {
             <div className="flex items-center justify-between p-4">
               <div className="flex items-center gap-4">
                 <div className="font-mono text-xs text-muted-foreground">
-                  {language === 'ru' ? 'Словарь' : 'Dictionary'}
+                  {language === 'ru' ? 'Философский словарь' : 'Philosophical Dictionary'}
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -179,43 +425,59 @@ const PeopleForgot = () => {
           </header>
 
           <ScrollArea className="flex-1">
-            <div className="max-w-4xl mx-auto p-8 space-y-12 vintage-lines">
+            <div className="max-w-4xl mx-auto p-8 space-y-12">
               <div className="relative">
                 <div className="absolute top-0 right-0 stamp text-xs text-accent">
-                  {language === 'ru' ? 'ДЕКЛАССИФИЦИРОВАНО' : 'DECLASSIFIED'}
-                  <div className="text-muted-foreground mt-1 text-center">2010</div>
+                  {language === 'ru' ? 'СЛОВАРЬ' : 'DICTIONARY'}
+                  <div className="text-muted-foreground mt-1 text-center">2010-2011</div>
                 </div>
 
                 <div className="pt-16 space-y-4 fade-in-up">
                   <h1 className="text-4xl md:text-5xl font-bold text-foreground leading-tight tracking-tight">
                     {t.title}
                   </h1>
+                  <p className="font-serif text-lg text-muted-foreground">
+                    {language === 'ru' 
+                      ? 'Философские и исторические термины из архивных текстов 2010-2011 годов'
+                      : 'Philosophical and historical terms from archival texts of 2010-2011'}
+                  </p>
                 </div>
               </div>
 
               <Separator className="my-12" />
 
-              <div className="space-y-10">
+              <div className="space-y-12">
                 {t.sections.map((section, idx) => (
-                  <div 
+                  <section 
                     key={idx} 
-                    className="fade-in-up space-y-4"
-                    style={{ animationDelay: `${idx * 0.1}s` }}
+                    id={`term-${idx}`}
+                    className="fade-in-up scroll-mt-20"
+                    style={{ animationDelay: `${idx * 0.05}s` }}
                   >
-                    <h2 className="font-serif text-2xl font-bold text-accent document-line pb-3">
+                    <h2 className="font-serif text-2xl font-bold text-foreground mb-4 document-line pb-2">
                       {section.term}
                     </h2>
-                    <p className="quote-highlight font-serif text-lg leading-relaxed text-foreground/90">
+                    <p className="font-serif text-base leading-relaxed text-foreground/90">
                       {section.text}
                     </p>
-                  </div>
+                  </section>
                 ))}
               </div>
 
               <div className="pt-12 pb-8">
                 <Separator className="mb-6" />
-                <div className="font-mono text-xs text-center text-muted-foreground italic">
-                  {t.footer}
+                <div className="flex items-center justify-between">
+                  <Button
+                    variant="outline"
+                    onClick={() => navigate('/')}
+                    className="font-mono text-xs"
+                  >
+                    <Icon name="ArrowLeft" size={14} className="mr-2" />
+                    {language === 'ru' ? 'К архиву' : 'Back to archive'}
+                  </Button>
+                  <div className="font-mono text-xs text-center text-muted-foreground">
+                    {t.footer}
+                  </div>
                 </div>
               </div>
             </div>

@@ -41,6 +41,7 @@ const Index = () => {
         then_now: 'Тогда и сейчас',
         search: 'Поиск',
         people_forgot: 'Люди просто забыли',
+        reminder: 'Напоминание',
         author: 'Об авторе',
         heatmap: 'Тепловая карта'
       }
@@ -63,6 +64,7 @@ const Index = () => {
         then_now: 'Then and Now',
         search: 'Search',
         people_forgot: 'People Forgot',
+        reminder: 'Reminder',
         author: 'About Author',
         heatmap: 'Heatmap'
       }
@@ -109,6 +111,8 @@ const Index = () => {
                       window.location.href = '/search';
                     } else if (key === 'people_forgot') {
                       window.location.href = '/people-forgot';
+                    } else if (key === 'reminder') {
+                      window.location.href = '/reminder';
                     } else {
                       setActiveSection(key);
                     }
