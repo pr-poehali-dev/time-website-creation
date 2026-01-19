@@ -38,6 +38,7 @@ const Index = () => {
         texts: 'Тексты',
         timeline: 'Временная шкала',
         then_now: 'Тогда и сейчас',
+        search: 'Поиск',
         author: 'Об авторе',
         heatmap: 'Тепловая карта'
       }
@@ -58,6 +59,7 @@ const Index = () => {
         texts: 'Texts',
         timeline: 'Timeline',
         then_now: 'Then and Now',
+        search: 'Search',
         author: 'About Author',
         heatmap: 'Heatmap'
       }
@@ -120,19 +122,33 @@ const Index = () => {
               <Separator className="my-4" />
 
               <nav className="space-y-2">
-                {Object.entries(t.sections).map(([key, label]) => (
-                  <button
-                    key={key}
-                    onClick={() => setActiveSection(key)}
-                    className={`w-full text-left px-3 py-2 rounded-sm text-sm transition-colors ${
-                      activeSection === key
-                        ? 'bg-sidebar-accent text-sidebar-accent-foreground font-medium'
-                        : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
-                    }`}
-                  >
-                    {label}
-                  </button>
-                ))}
+                {Object.entries(t.sections).map(([key, label]) => {
+                  const handleClick = () => {
+                    if (key === 'timeline') {
+                      window.location.href = '/timeline';
+                    } else if (key === 'then_now') {
+                      window.location.href = '/then-now';
+                    } else if (key === 'search') {
+                      window.location.href = '/search';
+                    } else {
+                      setActiveSection(key);
+                    }
+                  };
+
+                  return (
+                    <button
+                      key={key}
+                      onClick={handleClick}
+                      className={`w-full text-left px-3 py-2 rounded-sm text-sm transition-colors ${
+                        activeSection === key
+                          ? 'bg-sidebar-accent text-sidebar-accent-foreground font-medium'
+                          : 'text-sidebar-foreground hover:bg-sidebar-accent/50'
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  );
+                })}
               </nav>
 
               <Separator className="my-6" />
