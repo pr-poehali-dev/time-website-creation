@@ -9,6 +9,7 @@ import Document from "./pages/Document";
 import Timeline from "./pages/Timeline";
 import ThenNow from "./pages/ThenNow";
 import Search from "./pages/Search";
+import PeopleForgot from "./pages/PeopleForgot";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/then-now" element={<ThenNow />} />
           <Route path="/search" element={<Search />} />
+          <Route path="/people-forgot" element={<PeopleForgot />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

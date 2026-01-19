@@ -40,6 +40,7 @@ const Index = () => {
         timeline: 'Временная шкала',
         then_now: 'Тогда и сейчас',
         search: 'Поиск',
+        people_forgot: 'Люди просто забыли',
         author: 'Об авторе',
         heatmap: 'Тепловая карта'
       }
@@ -61,6 +62,7 @@ const Index = () => {
         timeline: 'Timeline',
         then_now: 'Then and Now',
         search: 'Search',
+        people_forgot: 'People Forgot',
         author: 'About Author',
         heatmap: 'Heatmap'
       }
@@ -105,6 +107,8 @@ const Index = () => {
                       window.location.href = '/then-now';
                     } else if (key === 'search') {
                       window.location.href = '/search';
+                    } else if (key === 'people_forgot') {
+                      window.location.href = '/people-forgot';
                     } else {
                       setActiveSection(key);
                     }
