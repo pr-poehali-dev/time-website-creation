@@ -113,6 +113,8 @@ const Index = () => {
                       window.location.href = '/people-forgot';
                     } else if (key === 'reminder') {
                       window.location.href = '/reminder';
+                    } else if (key === 'author') {
+                      window.location.href = '/author';
                     } else {
                       setActiveSection(key);
                     }

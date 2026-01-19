@@ -11,6 +11,7 @@ import ThenNow from "./pages/ThenNow";
 import Search from "./pages/Search";
 import PeopleForgot from "./pages/PeopleForgot";
 import Reminder from "./pages/Reminder";
+import Author from "./pages/Author";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/search" element={<Search />} />
           <Route path="/people-forgot" element={<PeopleForgot />} />
           <Route path="/reminder" element={<Reminder />} />
+          <Route path="/author" element={<Author />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
