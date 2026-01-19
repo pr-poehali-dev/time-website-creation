@@ -43,6 +43,7 @@ const Index = () => {
         people_forgot: 'Люди просто забыли',
         reminder: 'Напоминание',
         author: 'Об авторе',
+        contact: 'Контакты',
         heatmap: 'Тепловая карта'
       }
     },
@@ -66,6 +67,7 @@ const Index = () => {
         people_forgot: 'People Forgot',
         reminder: 'Reminder',
         author: 'About Author',
+        contact: 'Contact',
         heatmap: 'Heatmap'
       }
     }
@@ -115,6 +117,8 @@ const Index = () => {
                       window.location.href = '/reminder';
                     } else if (key === 'author') {
                       window.location.href = '/author';
+                    } else if (key === 'contact') {
+                      window.location.href = '/contact';
                     } else {
                       setActiveSection(key);
                     }
@@ -249,6 +253,61 @@ const Index = () => {
 
               <section className="space-y-6 fade-in-up" style={{animationDelay: '0.6s'}}>
                 <h2 className="font-serif text-3xl font-bold text-foreground document-line pb-4">
+                  {language === 'ru' ? 'Ключевые документы архива' : 'Key Archive Documents'}
+                </h2>
+                <div className="grid md:grid-cols-2 gap-4 mb-12">
+                  <Card 
+                    className="p-6 border-2 border-accent/50 bg-accent/5 hover:bg-accent/10 hover:shadow-lg transition-all cursor-pointer"
+                    onClick={() => window.location.href = '/reminder'}
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                        <Icon name="AlertCircle" size={24} className="text-accent" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-serif text-xl font-bold text-foreground mb-2">
+                          {language === 'ru' ? 'Напоминание' : 'Reminder'}
+                        </h3>
+                        <p className="text-sm text-foreground/80 font-serif mb-3">
+                          {language === 'ru' 
+                            ? 'Документ о приватизации России. Анализ механизмов 1985-2010 годов и предупреждение о последствиях.'
+                            : 'Document on Russia\'s privatization. Analysis of 1985-2010 mechanisms and warning about consequences.'}
+                        </p>
+                        <div className="font-mono text-xs text-accent">
+                          2010-2011 → {language === 'ru' ? 'Критически важно' : 'Critically important'}
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+
+                  <Card 
+                    className="p-6 border-2 border-primary/50 bg-primary/5 hover:bg-primary/10 hover:shadow-lg transition-all cursor-pointer"
+                    onClick={() => window.location.href = '/author'}
+                  >
+                    <div className="flex items-start gap-4">
+                      <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center">
+                        <Icon name="User" size={24} className="text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="font-serif text-xl font-bold text-foreground mb-2">
+                          {language === 'ru' ? 'Об авторе' : 'About Author'}
+                        </h3>
+                        <p className="text-sm text-foreground/80 font-serif mb-3">
+                          {language === 'ru'
+                            ? 'Философский контекст проекта. О природе истины, роли выдающихся людей и выборе пути.'
+                            : 'Philosophical context of the project. On the nature of truth, role of outstanding people and choice of path.'}
+                        </p>
+                        <div className="font-mono text-xs text-primary">
+                          {language === 'ru' ? 'Философия архива' : 'Archive philosophy'}
+                        </div>
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+              </section>
+
+              <section className="space-y-6 fade-in-up" style={{animationDelay: '0.8s'}}>
+                <h2 className="font-serif text-3xl font-bold text-foreground document-line pb-4">
                   {language === 'ru' ? 'Тепловая карта популярности' : 'Popularity Heatmap'}
                 </h2>
                 <div className="grid gap-4">
@@ -282,8 +341,22 @@ const Index = () => {
                 </div>
               </section>
 
-              <div className="pt-12 pb-8 font-mono text-xs text-center text-muted-foreground border-t border-border">
-                {language === 'ru' ? 'Страница 1 из 7' : 'Page 1 of 7'}
+              <div className="pt-12 pb-8 border-t border-border">
+                <div className="flex items-center justify-between mb-6">
+                  <div className="font-mono text-xs text-muted-foreground">
+                    {language === 'ru' ? 'Страница 1 из 7' : 'Page 1 of 7'}
+                  </div>
+                  <button
+                    onClick={() => window.location.href = '/contact'}
+                    className="font-mono text-xs text-accent hover:text-accent/80 transition-colors flex items-center gap-2"
+                  >
+                    <Icon name="Mail" size={14} />
+                    {language === 'ru' ? 'Связаться с нами' : 'Contact us'}
+                  </button>
+                </div>
+                <div className="text-center font-mono text-xs text-muted-foreground">
+                  © 2010-2026 {language === 'ru' ? 'Архив Времени' : 'Time Archive'}
+                </div>
               </div>
             </div>
           </ScrollArea>
